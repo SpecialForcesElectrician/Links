@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Forces Electrician - Enlaces Oficiales</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <!-- Language Toggle Button -->
+    <div class="language-toggle">
+        <button id="languageBtn" class="language-btn">
+            <i class="fas fa-globe"></i>
+            <span id="currentLang">ES</span>
+        </button>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-5 col-xxl-4">
+                <div class="main-container">
+                    <!-- Header Section -->
+                    <header class="profile-section">
+                        <div class="profile-image">
+                            <img src="img/Logo special.png" alt="Special Forces Electrician" id="profileImg" class="img-fluid">
+                        </div>
+                        <h1 class="agency-name">Special Forces Electrician</h1>
+                        <p class="agency-description" data-es="Especialistas en soluciones eléctricas integrales con más de 10 años de experiencia. Instalaciones industriales, comerciales y residenciales con tecnología de vanguardia." data-en="Specialists in comprehensive electrical solutions with over 10 years of experience. Industrial, commercial and residential installations with cutting-edge technology.">
+                            Especialistas en soluciones eléctricas integrales con más de 10 años de experiencia. Instalaciones industriales, comerciales y residenciales con tecnología de vanguardia.
+                        </p>
+                        <div class="stats">
+                            <div class="stat-item">
+                                <span class="stat-number">+500</span>
+                                <span class="stat-label" data-es="Proyectos" data-en="Projects">Proyectos</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">+300</span>
+                                <span class="stat-label" data-es="Clientes" data-en="Clients">Clientes</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">10+</span>
+                                <span class="stat-label" data-es="Años" data-en="Years">Años</span>
+                            </div>
+                        </div>
+                    </header>
+
+                    <!-- Video Section -->
+                    <section class="video-section">
+                        <h2 class="section-title">
+                            <i class="fas fa-play-circle"></i>
+                            <span data-es="Conoce Nuestro Trabajo" data-en="Discover Our Work">Conoce Nuestro Trabajo</span>
+                        </h2>
+                        <div class="video-container">
+                            <div class="video-wrapper">
+                                <video id="mainVideo" poster="/placeholder.svg?height=450&width=800&text=Video+Principal" class="w-100">
+                                    <source src="/placeholder.svg?height=450&width=800&text=Video+Principal" type="video/mp4">
+                                    <span data-es="Tu navegador no soporta el elemento de video." data-en="Your browser does not support the video element.">Tu navegador no soporta el elemento de video.</span>
+                                </video>
+                                <div class="video-overlay" id="videoOverlay">
+                                    <button class="play-button" id="playButton">
+                                        <i class="fas fa-play"></i>
+                                    </button>
+                                </div>
+                                <div class="video-controls" id="videoControls">
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" id="progressFill"></div>
+                                    </div>
+                                    <div class="controls-buttons">
+                                        <button id="playPauseBtn"><i class="fas fa-play"></i></button>
+                                        <span class="time-display" id="timeDisplay">0:00 / 0:00</span>
+                                        <button id="volumeBtn"><i class="fas fa-volume-up"></i></button>
+                                        <button id="fullscreenBtn"><i class="fas fa-expand"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <h3 data-es="Instalación Industrial - Planta MetalCorp" data-en="Industrial Installation - MetalCorp Plant">Instalación Industrial - Planta MetalCorp</h3>
+                                <p data-es="Descubre cómo transformamos una planta industrial completa con sistemas eléctricos de media tensión y automatización avanzada." data-en="Discover how we transformed a complete industrial plant with medium voltage electrical systems and advanced automation.">
+                                    Descubre cómo transformamos una planta industrial completa con sistemas eléctricos de media tensión y automatización avanzada.
+                                </p>
+                                <div class="video-stats">
+                                    <span><i class="fas fa-eye"></i> <span data-es="8.2K visualizaciones" data-en="8.2K views">8.2K visualizaciones</span></span>
+                                    <span><i class="fas fa-clock"></i> 4:32 min</span>
+                                    <span><i class="fas fa-calendar"></i> <span data-es="Hace 1 semana" data-en="1 week ago">Hace 1 semana</span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Services Section -->
+                    <section class="courses-section">
+                        <h2 class="section-title">
+                            <i class="fas fa-tools"></i>
+                            <span data-es="Nuestros Servicios" data-en="Our Services">Nuestros Servicios</span>
+                        </h2>
+                        <div class="row g-3">
+                            <!-- SERVICIO 1: INSTALACIONES ELÉCTRICAS -->
+                            <div class="col-12">
+                                <div class="course-card">
+                                    <div class="course-image">
+                                        <img src="img/hero_slide1.jpg" alt="Instalaciones Eléctricas" class="img-fluid">
+                                        <div class="course-badge bestseller" data-es="Más Popular" data-en="Most Popular">Más Popular</div>
+                                        <div class="course-level intermediate" data-es="Profesional" data-en="Professional">Profesional</div>
+                                    </div>
+                                    <div class="course-content">
+                                        <h3 data-es="Instalaciones Eléctricas" data-en="Electrical Installations">Instalaciones Eléctricas</h3>
+                                        <p data-es="Instalaciones industriales, comerciales y residenciales con certificación RETIE y garantía extendida." data-en="Industrial, commercial and residential installations with RETIE certification and extended warranty.">
+                                            Instalaciones industriales, comerciales y residenciales con certificación RETIE y garantía extendida.
+                                        </p>
+                                        <div class="course-meta">
+                                            <div class="course-rating">
+                                                <div class="stars">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <span class="rating-number">4.9</span>
+                                                <span class="rating-count" data-es="(127 reseñas)" data-en="(127 reviews)">(127 reseñas)</span>
+                                            </div>
+                                            <div class="course-details">
+                                                <span><i class="fas fa-clock"></i> <span data-es="24/7 Servicio" data-en="24/7 Service">24/7 Servicio</span></span>
+                                                <span><i class="fas fa-certificate"></i> <span data-es="Certificado RETIE" data-en="RETIE Certified">Certificado RETIE</span></span>
+                                            </div>
+                                        </div>
+                                        <div class="course-price">
+                                            <span class="current-price" data-es="Cotizar" data-en="Quote">Cotizar</span>
+                                            <span class="discount" data-es="Gratis" data-en="Free">Gratis</span>
+                                        </div>
+                                        <a href="https://wa.me/573173945568?text=Hola,%20me%20interesa%20información%20sobre%20instalaciones%20eléctricas." target="_blank" class="course-btn">
+                                            <i class="fab fa-whatsapp"></i>
+                                            <span data-es="Solicitar Cotización" data-en="Request Quote">Solicitar Cotización</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- SERVICIO 2: ENERGÍA SOLAR -->
+                            <div class="col-12">
+                                <div class="course-card">
+                                    <div class="course-image">
+                                        <img src="img/hero_slide2.jpg" alt="Energía Solar" class="img-fluid">
+                                        <div class="course-badge new" data-es="Sostenible" data-en="Sustainable">Sostenible</div>
+                                        <div class="course-level advanced" data-es="Avanzado" data-en="Advanced">Avanzado</div>
+                                    </div>
+                                    <div class="course-content">
+                                        <h3 data-es="Energía Solar" data-en="Solar Energy">Energía Solar</h3>
+                                        <p data-es="Sistemas fotovoltaicos completos con legalización y conexión a red. ROI garantizado." data-en="Complete photovoltaic systems with legalization and grid connection. Guaranteed ROI.">
+                                            Sistemas fotovoltaicos completos con legalización y conexión a red. ROI garantizado.
+                                        </p>
+                                        <div class="course-meta">
+                                            <div class="course-rating">
+                                                <div class="stars">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-half-alt"></i>
+                                                </div>
+                                                <span class="rating-number">4.8</span>
+                                                <span class="rating-count" data-es="(89 reseñas)" data-en="(89 reviews)">(89 reseñas)</span>
+                                            </div>
+                                            <div class="course-details">
+                                                <span><i class="fas fa-leaf"></i> Eco-Friendly</span>
+                                                <span><i class="fas fa-chart-line"></i> <span data-es="ROI Garantizado" data-en="Guaranteed ROI">ROI Garantizado</span></span>
+                                            </div>
+                                        </div>
+                                        <div class="course-price">
+                                            <span class="current-price" data-es="Cotizar" data-en="Quote">Cotizar</span>
+                                            <span class="discount" data-es="Gratis" data-en="Free">Gratis</span>
+                                        </div>
+                                        <a href="https://wa.me/573173945568?text=Hola,%20me%20interesa%20información%20sobre%20sistemas%20de%20energía%20solar." target="_blank" class="course-btn">
+                                            <i class="fab fa-whatsapp"></i>
+                                            <span data-es="Solicitar Cotización" data-en="Request Quote">Solicitar Cotización</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- SERVICIO 3: DOMÓTICA -->
+                            <div class="col-12">
+                                <div class="course-card">
+                                    <div class="course-image">
+                                        <img src="img/hero_slide3.jpg" alt="Domótica" class="img-fluid">
+                                        <div class="course-level intermediate" data-es="Inteligente" data-en="Smart">Inteligente</div>
+                                    </div>
+                                    <div class="course-content">
+                                        <h3 data-es="Domótica y Automatización" data-en="Home Automation & Smart Systems">Domótica y Automatización</h3>
+                                        <p data-es="Sistemas inteligentes para hogares y empresas. Control total desde tu smartphone." data-en="Smart systems for homes and businesses. Total control from your smartphone.">
+                                            Sistemas inteligentes para hogares y empresas. Control total desde tu smartphone.
+                                        </p>
+                                        <div class="course-meta">
+                                            <div class="course-rating">
+                                                <div class="stars">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <span class="rating-number">4.9</span>
+                                                <span class="rating-count" data-es="(156 reseñas)" data-en="(156 reviews)">(156 reseñas)</span>
+                                            </div>
+                                            <div class="course-details">
+                                                <span><i class="fas fa-mobile-alt"></i> <span data-es="Control Remoto" data-en="Remote Control">Control Remoto</span></span>
+                                                <span><i class="fas fa-shield-alt"></i> <span data-es="Seguridad" data-en="Security">Seguridad</span></span>
+                                            </div>
+                                        </div>
+                                        <div class="course-price">
+                                            <span class="current-price" data-es="Cotizar" data-en="Quote">Cotizar</span>
+                                            <span class="discount" data-es="Gratis" data-en="Free">Gratis</span>
+                                        </div>
+                                        <a href="https://wa.me/573173945568?text=Hola,%20me%20interesa%20información%20sobre%20domótica%20y%20automatización." target="_blank" class="course-btn">
+                                            <i class="fab fa-whatsapp"></i>
+                                            <span data-es="Solicitar Cotización" data-en="Request Quote">Solicitar Cotización</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- SERVICIO 4: MANTENIMIENTO -->
+                            <div class="col-12">
+                                <div class="course-card">
+                                    <div class="course-image">
+                                        <img src="img/hero_slide4.jpg" alt="Mantenimiento" class="img-fluid">
+                                        <div class="course-badge popular" data-es="Esencial" data-en="Essential">Esencial</div>
+                                        <div class="course-level beginner" data-es="Preventivo" data-en="Preventive">Preventivo</div>
+                                    </div>
+                                    <div class="course-content">
+                                        <h3 data-es="Mantenimiento Eléctrico" data-en="Electrical Maintenance">Mantenimiento Eléctrico</h3>
+                                        <p data-es="Mantenimiento preventivo y correctivo para garantizar el funcionamiento óptimo de tus instalaciones." data-en="Preventive and corrective maintenance to ensure optimal operation of your installations.">
+                                            Mantenimiento preventivo y correctivo para garantizar el funcionamiento óptimo de tus instalaciones.
+                                        </p>
+                                        <div class="course-meta">
+                                            <div class="course-rating">
+                                                <div class="stars">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-half-alt"></i>
+                                                </div>
+                                                <span class="rating-number">4.7</span>
+                                                <span class="rating-count" data-es="(203 reseñas)" data-en="(203 reviews)">(203 reseñas)</span>
+                                            </div>
+                                            <div class="course-details">
+                                                <span><i class="fas fa-calendar-check"></i> <span data-es="Programado" data-en="Scheduled">Programado</span></span>
+                                                <span><i class="fas fa-tools"></i> <span data-es="Especializado" data-en="Specialized">Especializado</span></span>
+                                            </div>
+                                        </div>
+                                        <div class="course-price">
+                                            <span class="current-price" data-es="Cotizar" data-en="Quote">Cotizar</span>
+                                            <span class="discount" data-es="Gratis" data-en="Free">Gratis</span>
+                                        </div>
+                                        <a href="https://wa.me/573173945568?text=Hola,%20me%20interesa%20información%20sobre%20servicios%20de%20mantenimiento." target="_blank" class="course-btn">
+                                            <i class="fab fa-whatsapp"></i>
+                                            <span data-es="Solicitar Cotización" data-en="Request Quote">Solicitar Cotización</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Links Section -->
+                    <main class="links-section">
+                        <h2 class="section-title">
+                            <i class="fas fa-link"></i>
+                            <span data-es="Enlaces Principales" data-en="Main Links">Enlaces Principales</span>
+                        </h2>
+                        
+                        <div class="row g-3">
+                            <!-- ENLACE 1: SITIO WEB -->
+                            <div class="col-12">
+                                <a href="https://specialforceselectrician.com" target="_blank" class="link-item">
+                                    <div class="link-icon">
+                                        <i class="fas fa-globe"></i>
+                                    </div>
+                                    <div class="link-content">
+                                        <h3 data-es="Sitio Web Oficial" data-en="Official Website">Sitio Web Oficial</h3>
+                                        <p data-es="Conoce todos nuestros servicios y proyectos" data-en="Learn about all our services and projects">Conoce todos nuestros servicios y proyectos</p>
+                                    </div>
+                                    <div class="link-arrow">
+                                        <i class="fas fa-arrow-right"></i>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- ENLACE 2: WHATSAPP -->
+                            <div class="col-12">
+                                <a href="https://wa.me/573173945568?text=Hola,%20me%20interesa%20obtener%20una%20cotización%20para%20un%20proyecto%20eléctrico." target="_blank" class="link-item">
+                                    <div class="link-icon">
+                                        <i class="fab fa-whatsapp"></i>
+                                    </div>
+                                    <div class="link-content">
+                                        <h3 data-es="Cotización WhatsApp" data-en="WhatsApp Quote">Cotización WhatsApp</h3>
+                                        <p data-es="Obtén tu cotización al instante" data-en="Get your instant quote">Obtén tu cotización al instante</p>
+                                    </div>
+                                    <div class="link-arrow">
+                                        <i class="fas fa-arrow-right"></i>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- ENLACE 4: PROYECTOS -->
+                            <div class="col-12">
+                                <a href="Proyectos.html" target="_blank" class="link-item">
+                                    <div class="link-icon">
+                                        <i class="fas fa-building"></i>
+                                    </div>
+                                    <div class="link-content">
+                                        <h3 data-es="Proyectos Realizados" data-en="Completed Projects">Proyectos Realizados</h3>
+                                        <p data-es="Conoce nuestros trabajos destacados" data-en="Discover our outstanding work">Conoce nuestros trabajos destacados</p>
+                                    </div>
+                                    <div class="link-arrow">
+                                        <i class="fas fa-arrow-right"></i>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- ENLACE 5: CERTIFICACIONES -->
+                            <div class="col-12">
+                                <a href="Certificaciones.html" target="_blank" class="link-item">
+                                    <div class="link-icon">
+                                        <i class="fas fa-certificate"></i>
+                                    </div>
+                                    <div class="link-content">
+                                        <h3 data-es="Certificaciones" data-en="Certifications">Certificaciones</h3>
+                                        <p>ISO 9001, RETIE, NFPA 70E</p>
+                                    </div>
+                                    <div class="link-arrow">
+                                        <i class="fas fa-arrow-right"></i>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- ENLACE 6: CONTACTO -->
+                            <div class="col-12">
+                                <a href="mailto:specialforceselectriciansas@gmail.com?subject=Consulta%20sobre%20servicios%20eléctricos" class="link-item">
+                                    <div class="link-icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div class="link-content">
+                                        <h3 data-es="Contacto" data-en="Contact">Contacto</h3>
+                                        <p data-es="Información de contacto completa" data-en="Complete contact information">Información de contacto completa</p>
+                                    </div>
+                                    <div class="link-arrow">
+                                        <i class="fas fa-arrow-right"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </main>
+
+                    <!-- Social Media Section -->
+                    <footer class="social-section">
+                        <h3 data-es="Síguenos en redes sociales" data-en="Follow us on social media">Síguenos en redes sociales</h3>
+                        <div class="social-links d-flex justify-content-center flex-wrap gap-3">
+                            <a href="https://www.instagram.com/specialforceselectrician/" target="_blank" class="social-link instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://www.facebook.com/profile.php?id=100066506946924" target="_blank" class="social-link facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/company/special-forces-electrician-sas/" target="_blank" class="social-link linkedin">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://www.tiktok.com/@electricistaspecialescol" target="_blank" class="social-link tiktok">
+                                <i class="fab fa-tiktok"></i>
+                            </a>
+                        </div>
+                        <p class="contact-info text-center mt-3">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:specialforceselectriciansas@gmail.com">specialforceselectriciansas@gmail.com</a>
+                        </p>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Background Elements -->
+    <div class="bg-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="script/script.js"></script>
+</body>
+</html>

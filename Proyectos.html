@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Forces Electrician - Proyectos Realizados</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style/proyectos.css">
+</head>
+<body>
+    <!-- Language Toggle Button -->
+    <div class="language-toggle">
+        <button id="languageBtn" class="language-btn">
+            <i class="fas fa-globe"></i>
+            <span id="currentLang">ES</span>
+        </button>
+    </div>
+
+    <!-- Back Button -->
+    <div class="back-button">
+        <a href="index.html" class="back-btn">
+            <i class="fas fa-arrow-left"></i>
+            <span data-es="Volver" data-en="Back">Volver</span>
+        </a>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-5 col-xxl-4">
+                <div class="main-container">
+                    <!-- Header Section -->
+                    <header class="profile-section">
+                        <div class="profile-image">
+                            <img src="img/Logo special.png" alt="Special Forces Electrician" id="profileImg" class="img-fluid">
+                        </div>
+                        <h1 class="agency-name">Proyectos Realizados</h1>
+                        <p class="agency-description" data-es="Descubre nuestros trabajos más destacados y la calidad que nos caracteriza. Más de 500 proyectos exitosos respaldan nuestra experiencia." data-en="Discover our most outstanding work and the quality that characterizes us. More than 500 successful projects support our experience.">
+                            Descubre nuestros trabajos más destacados y la calidad que nos caracteriza. Más de 500 proyectos exitosos respaldan nuestra experiencia.
+                        </p>
+                        <div class="stats">
+                            <div class="stat-item">
+                                <span class="stat-number">+500</span>
+                                <span class="stat-label" data-es="Proyectos" data-en="Projects">Proyectos</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">100%</span>
+                                <span class="stat-label" data-es="Éxito" data-en="Success">Éxito</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">24/7</span>
+                                <span class="stat-label" data-es="Soporte" data-en="Support">Soporte</span>
+                            </div>
+                        </div>
+                    </header>
+
+                    <!-- Filter Section -->
+                    <section class="filter-section">
+                        <h2 class="section-title">
+                            <i class="fas fa-filter"></i>
+                            <span data-es="Filtrar por Categoría" data-en="Filter by Category">Filtrar por Categoría</span>
+                        </h2>
+                        <div class="filter-buttons">
+                            <button class="filter-btn active" data-filter="all">
+                                <span data-es="Todos" data-en="All">Todos</span>
+                            </button>
+                            <button class="filter-btn" data-filter="industrial">
+                                <span data-es="Industrial" data-en="Industrial">Industrial</span>
+                            </button>
+                            <button class="filter-btn" data-filter="comercial">
+                                <span data-es="Comercial" data-en="Commercial">Comercial</span>
+                            </button>
+                            <button class="filter-btn" data-filter="residencial">
+                                <span data-es="Residencial" data-en="Residential">Residencial</span>
+                            </button>
+                            <button class="filter-btn" data-filter="solar">
+                                <span data-es="Solar" data-en="Solar">Solar</span>
+                            </button>
+                        </div>
+                    </section>
+
+                    <!-- Projects Section -->
+                    <main class="projects-section">
+                        <h2 class="section-title">
+                            <i class="fas fa-building"></i>
+                            <span data-es="Nuestros Proyectos" data-en="Our Projects">Nuestros Proyectos</span>
+                        </h2>
+                        
+                        <div class="row g-3" id="projectsContainer">
+                            <!-- PROYECTO 1: PLANTA INDUSTRIAL -->
+                            <div class="col-12 project-item" data-category="industrial">
+                                <div class="project-card">
+                                    <div class="project-image">
+                                        <img src="/placeholder.svg?height=300&width=400&text=Planta+Industrial+MetalCorp" alt="Planta Industrial MetalCorp" class="img-fluid">
+                                        <div class="project-badge industrial">
+                                            <span data-es="Industrial" data-en="Industrial">Industrial</span>
+                                        </div>
+                                        <div class="project-overlay">
+                                            <button class="view-btn" onclick="openProjectModal('project1')">
+                                                <i class="fas fa-eye"></i>
+                                                <span data-es="Ver Detalles" data-en="View Details">Ver Detalles</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="project-content">
+                                        <h3 data-es="Planta Industrial MetalCorp" data-en="MetalCorp Industrial Plant">Planta Industrial MetalCorp</h3>
+                                        <p data-es="Instalación completa de sistema eléctrico de media tensión para planta metalúrgica. Incluye subestación, tableros de distribución y sistema de automatización." data-en="Complete medium voltage electrical system installation for metallurgical plant. Includes substation, distribution panels and automation system.">
+                                            Instalación completa de sistema eléctrico de media tensión para planta metalúrgica. Incluye subestación, tableros de distribución y sistema de automatización.
+                                        </p>
+                                        <div class="project-meta">
+                                            <div class="project-details">
+                                                <span><i class="fas fa-calendar"></i> <span data-es="2024" data-en="2024">2024</span></span>
+                                                <span><i class="fas fa-map-marker-alt"></i> <span data-es="Bogotá, Colombia" data-en="Bogotá, Colombia">Bogotá, Colombia</span></span>
+                                                <span><i class="fas fa-bolt"></i> 13.2 kV</span>
+                                            </div>
+                                            <div class="project-rating">
+                                                <div class="stars">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <span class="rating-text" data-es="Excelente" data-en="Excellent">Excelente</span>
+                                            </div>
+                                        </div>
+                                        <div class="project-tags">
+                                            <span class="tag">RETIE</span>
+                                            <span class="tag" data-es="Media Tensión" data-en="Medium Voltage">Media Tensión</span>
+                                            <span class="tag" data-es="Automatización" data-en="Automation">Automatización</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- PROYECTO 2: CENTRO COMERCIAL -->
+                            <div class="col-12 project-item" data-category="comercial">
+                                <div class="project-card">
+                                    <div class="project-image">
+                                        <img src="/placeholder.svg?height=300&width=400&text=Centro+Comercial+Plaza+Norte" alt="Centro Comercial Plaza Norte" class="img-fluid">
+                                        <div class="project-badge comercial">
+                                            <span data-es="Comercial" data-en="Commercial">Comercial</span>
+                                        </div>
+                                        <div class="project-overlay">
+                                            <button class="view-btn" onclick="openProjectModal('project2')">
+                                                <i class="fas fa-eye"></i>
+                                                <span data-es="Ver Detalles" data-en="View Details">Ver Detalles</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="project-content">
+                                        <h3 data-es="Centro Comercial Plaza Norte" data-en="Plaza Norte Shopping Center">Centro Comercial Plaza Norte</h3>
+                                        <p data-es="Diseño e instalación del sistema eléctrico completo para centro comercial de 3 niveles. Iluminación LED, sistema de emergencia y climatización." data-en="Design and installation of complete electrical system for 3-level shopping center. LED lighting, emergency system and air conditioning.">
+                                            Diseño e instalación del sistema eléctrico completo para centro comercial de 3 niveles. Iluminación LED, sistema de emergencia y climatización.
+                                        </p>
+                                        <div class="project-meta">
+                                            <div class="project-details">
+                                                <span><i class="fas fa-calendar"></i> <span data-es="2023" data-en="2023">2023</span></span>
+                                                <span><i class="fas fa-map-marker-alt"></i> <span data-es="Medellín, Colombia" data-en="Medellín, Colombia">Medellín, Colombia</span></span>
+                                                <span><i class="fas fa-building"></i> 15,000 m²</span>
+                                            </div>
+                                            <div class="project-rating">
+                                                <div class="stars">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <span class="rating-text" data-es="Excelente" data-en="Excellent">Excelente</span>
+                                            </div>
+                                        </div>
+                                        <div class="project-tags">
+                                            <span class="tag">LED</span>
+                                            <span class="tag" data-es="Emergencia" data-en="Emergency">Emergencia</span>
+                                            <span class="tag" data-es="Climatización" data-en="HVAC">Climatización</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- PROYECTO 3: RESIDENCIAL PREMIUM -->
+                            <div class="col-12 project-item" data-category="residencial">
+                                <div class="project-card">
+                                    <div class="project-image">
+                                        <img src="/placeholder.svg?height=300&width=400&text=Residencial+Los+Alamos" alt="Residencial Los Álamos" class="img-fluid">
+                                        <div class="project-badge residencial">
+                                            <span data-es="Residencial" data-en="Residential">Residencial</span>
+                                        </div>
+                                        <div class="project-overlay">
+                                            <button class="view-btn" onclick="openProjectModal('project3')">
+                                                <i class="fas fa-eye"></i>
+                                                <span data-es="Ver Detalles" data-en="View Details">Ver Detalles</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="project-content">
+                                        <h3 data-es="Conjunto Residencial Los Álamos" data-en="Los Álamos Residential Complex">Conjunto Residencial Los Álamos</h3>
+                                        <p data-es="Instalación eléctrica completa para conjunto residencial de 120 apartamentos. Incluye domótica, sistema de seguridad y áreas comunes." data-en="Complete electrical installation for residential complex of 120 apartments. Includes home automation, security system and common areas.">
+                                            Instalación eléctrica completa para conjunto residencial de 120 apartamentos. Incluye domótica, sistema de seguridad y áreas comunes.
+                                        </p>
+                                        <div class="project-meta">
+                                            <div class="project-details">
+                                                <span><i class="fas fa-calendar"></i> <span data-es="2023" data-en="2023">2023</span></span>
+                                                <span><i class="fas fa-map-marker-alt"></i> <span data-es="Cali, Colombia" data-en="Cali, Colombia">Cali, Colombia</span></span>
+                                                <span><i class="fas fa-home"></i> 120 <span data-es="Apts" data-en="Apts">Apts</span></span>
+                                            </div>
+                                            <div class="project-rating">
+                                                <div class="stars">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-half-alt"></i>
+                                                </div>
+                                                <span class="rating-text" data-es="Muy Bueno" data-en="Very Good">Muy Bueno</span>
+                                            </div>
+                                        </div>
+                                        <div class="project-tags">
+                                            <span class="tag" data-es="Domótica" data-en="Smart Home">Domótica</span>
+                                            <span class="tag" data-es="Seguridad" data-en="Security">Seguridad</span>
+                                            <span class="tag" data-es="Residencial" data-en="Residential">Residencial</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- PROYECTO 4: SISTEMA SOLAR -->
+                            <div class="col-12 project-item" data-category="solar">
+                                <div class="project-card">
+                                    <div class="project-image">
+                                        <img src="/placeholder.svg?height=300&width=400&text=Sistema+Solar+EcoTech" alt="Sistema Solar EcoTech" class="img-fluid">
+                                        <div class="project-badge solar">
+                                            <span data-es="Solar" data-en="Solar">Solar</span>
+                                        </div>
+                                        <div class="project-overlay">
+                                            <button class="view-btn" onclick="openProjectModal('project4')">
+                                                <i class="fas fa-eye"></i>
+                                                <span data-es="Ver Detalles" data-en="View Details">Ver Detalles</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="project-content">
+                                        <h3 data-es="Sistema Solar EcoTech Industries" data-en="EcoTech Industries Solar System">Sistema Solar EcoTech Industries</h3>
+                                        <p data-es="Instalación de sistema fotovoltaico de 500kW para empresa tecnológica. Conexión a red con medición bidireccional y monitoreo remoto." data-en="Installation of 500kW photovoltaic system for technology company. Grid connection with bidirectional metering and remote monitoring.">
+                                            Instalación de sistema fotovoltaico de 500kW para empresa tecnológica. Conexión a red con medición bidireccional y monitoreo remoto.
+                                        </p>
+                                        <div class="project-meta">
+                                            <div class="project-details">
+                                                <span><i class="fas fa-calendar"></i> <span data-es="2024" data-en="2024">2024</span></span>
+                                                <span><i class="fas fa-map-marker-alt"></i> <span data-es="Barranquilla, Colombia" data-en="Barranquilla, Colombia">Barranquilla, Colombia</span></span>
+                                                <span><i class="fas fa-solar-panel"></i> 500 kW</span>
+                                            </div>
+                                            <div class="project-rating">
+                                                <div class="stars">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <span class="rating-text" data-es="Excelente" data-en="Excellent">Excelente</span>
+                                            </div>
+                                        </div>
+                                        <div class="project-tags">
+                                            <span class="tag" data-es="Fotovoltaico" data-en="Photovoltaic">Fotovoltaico</span>
+                                            <span class="tag" data-es="Red" data-en="Grid">Red</span>
+                                            <span class="tag" data-es="Monitoreo" data-en="Monitoring">Monitoreo</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- PROYECTO 5: HOSPITAL -->
+                            <div class="col-12 project-item" data-category="comercial">
+                                <div class="project-card">
+                                    <div class="project-image">
+                                        <img src="/placeholder.svg?height=300&width=400&text=Hospital+San+Rafael" alt="Hospital San Rafael" class="img-fluid">
+                                        <div class="project-badge comercial">
+                                            <span data-es="Comercial" data-en="Commercial">Comercial</span>
+                                        </div>
+                                        <div class="project-overlay">
+                                            <button class="view-btn" onclick="openProjectModal('project5')">
+                                                <i class="fas fa-eye"></i>
+                                                <span data-es="Ver Detalles" data-en="View Details">Ver Detalles</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="project-content">
+                                        <h3 data-es="Hospital San Rafael" data-en="San Rafael Hospital">Hospital San Rafael</h3>
+                                        <p data-es="Modernización del sistema eléctrico hospitalario con UPS redundante, planta de emergencia y sistema de tierras hospitalario especializado." data-en="Hospital electrical system modernization with redundant UPS, emergency plant and specialized hospital grounding system.">
+                                            Modernización del sistema eléctrico hospitalario con UPS redundante, planta de emergencia y sistema de tierras hospitalario especializado.
+                                        </p>
+                                        <div class="project-meta">
+                                            <div class="project-details">
+                                                <span><i class="fas fa-calendar"></i> <span data-es="2023" data-en="2023">2023</span></span>
+                                                <span><i class="fas fa-map-marker-alt"></i> <span data-es="Cartagena, Colombia" data-en="Cartagena, Colombia">Cartagena, Colombia</span></span>
+                                                <span><i class="fas fa-hospital"></i> 200 <span data-es="Camas" data-en="Beds">Camas</span></span>
+                                            </div>
+                                            <div class="project-rating">
+                                                <div class="stars">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <span class="rating-text" data-es="Excelente" data-en="Excellent">Excelente</span>
+                                            </div>
+                                        </div>
+                                        <div class="project-tags">
+                                            <span class="tag">UPS</span>
+                                            <span class="tag" data-es="Emergencia" data-en="Emergency">Emergencia</span>
+                                            <span class="tag" data-es="Hospitalario" data-en="Hospital">Hospitalario</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- PROYECTO 6: FÁBRICA TEXTIL -->
+                            <div class="col-12 project-item" data-category="industrial">
+                                <div class="project-card">
+                                    <div class="project-image">
+                                        <img src="/placeholder.svg?height=300&width=400&text=Fabrica+Textil+Colombia" alt="Fábrica Textil Colombia" class="img-fluid">
+                                        <div class="project-badge industrial">
+                                            <span data-es="Industrial" data-en="Industrial">Industrial</span>
+                                        </div>
+                                        <div class="project-overlay">
+                                            <button class="view-btn" onclick="openProjectModal('project6')">
+                                                <i class="fas fa-eye"></i>
+                                                <span data-es="Ver Detalles" data-en="View Details">Ver Detalles</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="project-content">
+                                        <h3 data-es="Fábrica Textil Colombia S.A." data-en="Colombia Textile Factory S.A.">Fábrica Textil Colombia S.A.</h3>
+                                        <p data-es="Instalación de sistema eléctrico industrial para nueva planta textil. Incluye centros de control de motores, variadores de frecuencia y sistema SCADA." data-en="Industrial electrical system installation for new textile plant. Includes motor control centers, frequency drives and SCADA system.">
+                                            Instalación de sistema eléctrico industrial para nueva planta textil. Incluye centros de control de motores, variadores de frecuencia y sistema SCADA.
+                                        </p>
+                                        <div class="project-meta">
+                                            <div class="project-details">
+                                                <span><i class="fas fa-calendar"></i> <span data-es="2024" data-en="2024">2024</span></span>
+                                                <span><i class="fas fa-map-marker-alt"></i> <span data-es="Pereira, Colombia" data-en="Pereira, Colombia">Pereira, Colombia</span></span>
+                                                <span><i class="fas fa-industry"></i> 8,000 m²</span>
+                                            </div>
+                                            <div class="project-rating">
+                                                <div class="stars">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star-half-alt"></i>
+                                                </div>
+                                                <span class="rating-text" data-es="Muy Bueno" data-en="Very Good">Muy Bueno</span>
+                                            </div>
+                                        </div>
+                                        <div class="project-tags">
+                                            <span class="tag">CCM</span>
+                                            <span class="tag">VFD</span>
+                                            <span class="tag">SCADA</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+
+                    <!-- Contact Section -->
+                    <section class="contact-section">
+                        <h2 class="section-title">
+                            <i class="fas fa-handshake"></i>
+                            <span data-es="¿Tienes un Proyecto en Mente?" data-en="Do You Have a Project in Mind?">¿Tienes un Proyecto en Mente?</span>
+                        </h2>
+                        <p class="contact-description" data-es="Contáctanos para una cotización gratuita y personalizada" data-en="Contact us for a free and personalized quote">
+                            Contáctanos para una cotización gratuita y personalizada
+                        </p>
+                        <div class="contact-buttons">
+                            <a href="https://wa.me/573173945568?text=Hola,%20me%20interesa%20obtener%20una%20cotización%20para%20un%20proyecto%20eléctrico." target="_blank" class="contact-btn whatsapp">
+                                <i class="fab fa-whatsapp"></i>
+                                <span data-es="Cotizar por WhatsApp" data-en="Quote via WhatsApp">Cotizar por WhatsApp</span>
+                            </a>
+                            <a href="tel:+573173945568" class="contact-btn phone">
+                                <i class="fas fa-phone"></i>
+                                <span data-es="Llamar Ahora" data-en="Call Now">Llamar Ahora</span>
+                            </a>
+                        </div>
+                    </section>
+
+                    <!-- Social Media Section -->
+                    <footer class="social-section">
+                        <h3 data-es="Síguenos en redes sociales" data-en="Follow us on social media">Síguenos en redes sociales</h3>
+                        <div class="social-links d-flex justify-content-center flex-wrap gap-3">
+                            <a href="https://www.instagram.com/specialforceselectrician/" target="_blank" class="social-link instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://www.facebook.com/profile.php?id=100066506946924" target="_blank" class="social-link facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/company/special-forces-electrician-sas/" target="_blank" class="social-link linkedin">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://www.tiktok.com/@electricistaspecialescol" target="_blank" class="social-link tiktok">
+                                <i class="fab fa-tiktok"></i>
+                            </a>
+                        </div>
+                        <p class="contact-info text-center mt-3">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:specialforceselectriciansas@gmail.com">specialforceselectriciansas@gmail.com</a>
+                        </p>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Background Elements -->
+    <div class="bg-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <!-- Project Modal -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle">Título del Proyecto</h2>
+                <span class="close" onclick="closeProjectModal()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img id="modalImage" src="/placeholder.svg" alt="Proyecto">
+                </div>
+                <div class="modal-info">
+                    <p id="modalDescription">Descripción del proyecto...</p>
+                    <div class="modal-details">
+                        <div class="detail-item">
+                            <strong data-es="Cliente:" data-en="Client:">Cliente:</strong>
+                            <span id="modalClient">-</span>
+                        </div>
+                        <div class="detail-item">
+                            <strong data-es="Duración:" data-en="Duration:">Duración:</strong>
+                            <span id="modalDuration">-</span>
+                        </div>
+                        <div class="detail-item">
+                            <strong data-es="Equipo:" data-en="Team:">Equipo:</strong>
+                            <span id="modalTeam">-</span>
+                        </div>
+                        <div class="detail-item">
+                            <strong data-es="Certificaciones:" data-en="Certifications:">Certificaciones:</strong>
+                            <span id="modalCertifications">-</span>
+                        </div>
+                    </div>
+                    <div class="modal-gallery">
+                        <h4 data-es="Galería del Proyecto" data-en="Project Gallery">Galería del Proyecto</h4>
+                        <div class="gallery-grid" id="modalGallery">
+                            <!-- Gallery images will be inserted here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="modal-btn" onclick="contactProject()">
+                    <i class="fab fa-whatsapp"></i>
+                    <span data-es="Consultar Proyecto Similar" data-en="Inquire Similar Project">Consultar Proyecto Similar</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="script/proyectos.js"></script>
+</body>
+</html>

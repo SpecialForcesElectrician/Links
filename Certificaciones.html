@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Forces Electrician - Certificaciones</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style/Certificaciones.css">
+</head>
+<body>
+    <!-- Language Toggle Button -->
+    <div class="language-toggle">
+        <button id="languageBtn" class="language-btn">
+            <i class="fas fa-globe"></i>
+            <span id="currentLang">ES</span>
+        </button>
+    </div>
+
+    <!-- Back Button -->
+    <div class="back-button">
+        <a href="index.html" class="back-btn">
+            <i class="fas fa-arrow-left"></i>
+            <span data-es="Volver" data-en="Back">Volver</span>
+        </a>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-5 col-xxl-4">
+                <div class="main-container">
+                    <!-- Header Section -->
+                    <header class="profile-section">
+                        <div class="profile-image">
+                            <img src="img/Logo special.png" alt="Special Forces Electrician" id="profileImg" class="img-fluid">
+                        </div>
+                        <h1 class="agency-name">Certificaciones</h1>
+                        <p class="agency-description" data-es="Nuestras certificaciones y acreditaciones garantizan la más alta calidad y cumplimiento normativo en todos nuestros servicios eléctricos." data-en="Our certifications and accreditations guarantee the highest quality and regulatory compliance in all our electrical services.">
+                            Nuestras certificaciones y acreditaciones garantizan la más alta calidad y cumplimiento normativo en todos nuestros servicios eléctricos.
+                        </p>
+                        <div class="stats">
+                            <div class="stat-item">
+                                <span class="stat-number">15+</span>
+                                <span class="stat-label" data-es="Certificaciones" data-en="Certifications">Certificaciones</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">100%</span>
+                                <span class="stat-label" data-es="Cumplimiento" data-en="Compliance">Cumplimiento</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">10+</span>
+                                <span class="stat-label" data-es="Años" data-en="Years">Años</span>
+                            </div>
+                        </div>
+                    </header>
+
+                    <!-- Filter Section -->
+                    <section class="filter-section">
+                        <h2 class="section-title">
+                            <i class="fas fa-filter"></i>
+                            <span data-es="Filtrar por Categoría" data-en="Filter by Category">Filtrar por Categoría</span>
+                        </h2>
+                        <div class="filter-buttons">
+                            <button class="filter-btn active" data-filter="all">
+                                <span data-es="Todas" data-en="All">Todas</span>
+                            </button>
+                            <button class="filter-btn" data-filter="tecnicas">
+                                <span data-es="Técnicas" data-en="Technical">Técnicas</span>
+                            </button>
+                            <button class="filter-btn" data-filter="calidad">
+                                <span data-es="Calidad" data-en="Quality">Calidad</span>
+                            </button>
+                            <button class="filter-btn" data-filter="seguridad">
+                                <span data-es="Seguridad" data-en="Safety">Seguridad</span>
+                            </button>
+                            <button class="filter-btn" data-filter="ambiental">
+                                <span data-es="Ambiental" data-en="Environmental">Ambiental</span>
+                            </button>
+                        </div>
+                        <div class="filter-results text-center mt-3">
+                            <span id="filterCount" class="filter-count" style="display: none;">
+                                <span id="countNumber">8</span> 
+                                <span data-es="certificaciones" data-en="certifications">certificaciones</span>
+                            </span>
+                        </div>
+                    </section>
+
+                    <!-- Certifications Section -->
+                    <main class="certifications-section">
+                        <h2 class="section-title">
+                            <i class="fas fa-certificate"></i>
+                            <span data-es="Nuestras Certificaciones" data-en="Our Certifications">Nuestras Certificaciones</span>
+                        </h2>
+                        
+                        <div class="row g-3" id="certificationsContainer">
+                            <!-- CERTIFICACIÓN 1: RETIE -->
+                            <div class="col-12 certification-item" data-category="tecnicas">
+                                <div class="certification-card">
+                                    <div class="certification-image">
+                                        <img src="/placeholder.svg?height=200&width=300&text=RETIE+Certification" alt="Certificación RETIE" class="img-fluid">
+                                        <div class="certification-badge tecnicas">
+                                            <span data-es="Técnica" data-en="Technical">Técnica</span>
+                                        </div>
+                                        <div class="certification-overlay">
+                                            <button class="view-btn" onclick="openCertificationModal('cert1')">
+                                                <i class="fas fa-eye"></i>
+                                                <span data-es="Ver Certificado" data-en="View Certificate">Ver Certificado</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="certification-content">
+                                        <h3>RETIE</h3>
+                                        <p class="certification-subtitle" data-es="Reglamento Técnico de Instalaciones Eléctricas" data-en="Technical Regulation for Electrical Installations">Reglamento Técnico de Instalaciones Eléctricas</p>
+                                        <p data-es="Certificación que garantiza el cumplimiento de los requisitos técnicos para instalaciones eléctricas en Colombia, asegurando la seguridad de personas y bienes." data-en="Certification that guarantees compliance with technical requirements for electrical installations in Colombia, ensuring the safety of people and property.">
+                                            Certificación que garantiza el cumplimiento de los requisitos técnicos para instalaciones eléctricas en Colombia, asegurando la seguridad de personas y bienes.
+                                        </p>
+                                        <div class="certification-meta">
+                                            <div class="certification-details">
+                                                <span><i class="fas fa-calendar"></i> <span data-es="Vigente hasta 2025" data-en="Valid until 2025">Vigente hasta 2025</span></span>
+                                                <span><i class="fas fa-building"></i> <span data-es="CIDET" data-en="CIDET">CIDET</span></span>
+                                                <span><i class="fas fa-shield-alt"></i> <span data-es="Alta Tensión" data-en="High Voltage">Alta Tensión</span></span>
+                                            </div>
+                                            <div class="certification-status valid">
+                                                <i class="fas fa-check-circle"></i>
+                                                <span data-es="Vigente" data-en="Valid">Vigente</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- CERTIFICACIÓN 2: ISO 9001 -->
+                            <div class="col-12 certification-item" data-category="calidad">
+                                <div class="certification-card">
+                                    <div class="certification-image">
+                                        <img src="/placeholder.svg?height=200&width=300&text=ISO+9001+Certificate" alt="Certificación ISO 9001" class="img-fluid">
+                                        <div class="certification-badge calidad">
+                                            <span data-es="Calidad" data-en="Quality">Calidad</span>
+                                        </div>
+                                        <div class="certification-overlay">
+                                            <button class="view-btn" onclick="openCertificationModal('cert2')">
+                                                <i class="fas fa-eye"></i>
+                                                <span data-es="Ver Certificado" data-en="View Certificate">Ver Certificado</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="certification-content">
+                                        <h3>ISO 9001:2015</h3>
+                                        <p class="certification-subtitle" data-es="Sistema de Gestión de Calidad" data-en="Quality Management System">Sistema de Gestión de Calidad</p>
+                                        <p data-es="Estándar internacional que especifica los requisitos para un sistema de gestión de calidad, demostrando nuestra capacidad para proporcionar servicios que satisfacen los requisitos del cliente." data-en="International standard that specifies requirements for a quality management system, demonstrating our ability to provide services that meet customer requirements.">
+                                            Estándar internacional que especifica los requisitos para un sistema de gestión de calidad, demostrando nuestra capacidad para proporcionar servicios que satisfacen los requisitos del cliente.
+                                        </p>
+                                        <div class="certification-meta">
+                                            <div class="certification-details">
+                                                <span><i class="fas fa-calendar"></i> <span data-es="Vigente hasta 2026" data-en="Valid until 2026">Vigente hasta 2026</span></span>
+                                                <span><i class="fas fa-building"></i> ICONTEC</span>
+                                                <span><i class="fas fa-award"></i> <span data-es="Internacional" data-en="International">Internacional</span></span>
+                                            </div>
+                                            <div class="certification-status valid">
+                                                <i class="fas fa-check-circle"></i>
+                                                <span data-es="Vigente" data-en="Valid">Vigente</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- CERTIFICACIÓN 3: NFPA 70E -->
+                            <div class="col-12 certification-item" data-category="seguridad">
+                                <div class="certification-card">
+                                    <div class="certification-image">
+                                        <img src="/placeholder.svg?height=200&width=300&text=NFPA+70E+Certificate" alt="Certificación NFPA 70E" class="img-fluid">
+                                        <div class="certification-badge seguridad">
+                                            <span data-es="Seguridad" data-en="Safety">Seguridad</span>
+                                        </div>
+                                        <div class="certification-overlay">
+                                            <button class="view-btn" onclick="openCertificationModal('cert3')">
+                                                <i class="fas fa-eye"></i>
+                                                <span data-es="Ver Certificado" data-en="View Certificate">Ver Certificado</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="certification-content">
+                                        <h3>NFPA 70E</h3>
+                                        <p class="certification-subtitle" data-es="Seguridad Eléctrica en el Lugar de Trabajo" data-en="Electrical Safety in the Workplace">Seguridad Eléctrica en el Lugar de Trabajo</p>
+                                        <p data-es="Estándar para la seguridad eléctrica en el lugar de trabajo que establece prácticas de trabajo seguras para proteger a los trabajadores de los peligros eléctricos." data-en="Standard for electrical safety in the workplace that establishes safe work practices to protect workers from electrical hazards.">
+                                            Estándar para la seguridad eléctrica en el lugar de trabajo que establece prácticas de trabajo seguras para proteger a los trabajadores de los peligros eléctricos.
+                                        </p>
+                                        <div class="certification-meta">
+                                            <div class="certification-details">
+                                                <span><i class="fas fa-calendar"></i> <span data-es="Vigente hasta 2025" data-en="Valid until 2025">Vigente hasta 2025</span></span>
+                                                <span><i class="fas fa-building"></i> NFPA</span>
+                                                <span><i class="fas fa-hard-hat"></i> <span data-es="Seguridad" data-en="Safety">Seguridad</span></span>
+                                            </div>
+                                            <div class="certification-status valid">
+                                                <i class="fas fa-check-circle"></i>
+                                                <span data-es="Vigente" data-en="Valid">Vigente</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- CERTIFICACIÓN 4: ISO 45001 -->
+                            <div class="col-12 certification-item" data-category="seguridad">
+                                <div class="certification-card">
+                                    <div class="certification-image">
+                                        <img src="/placeholder.svg?height=200&width=300&text=ISO+45001+Certificate" alt="Certificación ISO 45001" class="img-fluid">
+                                        <div class="certification-badge seguridad">
+                                            <span data-es="Seguridad" data-en="Safety">Seguridad</span>
+                                        </div>
+                                        <div class="certification-overlay">
+                                            <button class="view-btn" onclick="openCertificationModal('cert4')">
+                                                <i class="fas fa-eye"></i>
+                                                <span data-es="Ver Certificado" data-en="View Certificate">Ver Certificado</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="certification-content">
+                                        <h3>ISO 45001:2018</h3>
+                                        <p class="certification-subtitle" data-es="Gestión de Seguridad y Salud Ocupacional" data-en="Occupational Health and Safety Management">Gestión de Seguridad y Salud Ocupacional</p>
+                                        <p data-es="Sistema de gestión de seguridad y salud en el trabajo que ayuda a las organizaciones a mejorar la seguridad de los empleados, reducir los riesgos en el lugar de trabajo y crear mejores condiciones de trabajo." data-en="Occupational health and safety management system that helps organizations improve employee safety, reduce workplace risks and create better working conditions.">
+                                            Sistema de gestión de seguridad y salud en el trabajo que ayuda a las organizaciones a mejorar la seguridad de los empleados, reducir los riesgos en el lugar de trabajo y crear mejores condiciones de trabajo.
+                                        </p>
+                                        <div class="certification-meta">
+                                            <div class="certification-details">
+                                                <span><i class="fas fa-calendar"></i> <span data-es="Vigente hasta 2026" data-en="Valid until 2026">Vigente hasta 2026</span></span>
+                                                <span><i class="fas fa-building"></i> ICONTEC</span>
+                                                <span><i class="fas fa-user-shield"></i> SST</span>
+                                            </div>
+                                            <div class="certification-status valid">
+                                                <i class="fas fa-check-circle"></i>
+                                                <span data-es="Vigente" data-en="Valid">Vigente</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- CERTIFICACIÓN 5: ISO 14001 -->
+                            <div class="col-12 certification-item" data-category="ambiental">
+                                <div class="certification-card">
+                                    <div class="certification-image">
+                                        <img src="/placeholder.svg?height=200&width=300&text=ISO+14001+Certificate" alt="Certificación ISO 14001" class="img-fluid">
+                                        <div class="certification-badge ambiental">
+                                            <span data-es="Ambiental" data-en="Environmental">Ambiental</span>
+                                        </div>
+                                        <div class="certification-overlay">
+                                            <button class="view-btn" onclick="openCertificationModal('cert5')">
+                                                <i class="fas fa-eye"></i>
+                                                <span data-es="Ver Certificado" data-en="View Certificate">Ver Certificado</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="certification-content">
+                                        <h3>ISO 14001:2015</h3>
+                                        <p class="certification-subtitle" data-es="Sistema de Gestión Ambiental" data-en="Environmental Management System">Sistema de Gestión Ambiental</p>
+                                        <p data-es="Estándar internacional que especifica los requisitos para un sistema de gestión ambiental efectivo, demostrando nuestro compromiso con la protección del medio ambiente." data-en="International standard that specifies requirements for an effective environmental management system, demonstrating our commitment to environmental protection.">
+                                            Estándar internacional que especifica los requisitos para un sistema de gestión ambiental efectivo, demostrando nuestro compromiso con la protección del medio ambiente.
+                                        </p>
+                                        <div class="certification-meta">
+                                            <div class="certification-details">
+                                                <span><i class="fas fa-calendar"></i> <span data-es="Vigente hasta 2026" data-en="Valid until 2026">Vigente hasta 2026</span></span>
+                                                <span><i class="fas fa-building"></i> ICONTEC</span>
+                                                <span><i class="fas fa-leaf"></i> <span data-es="Sostenible" data-en="Sustainable">Sostenible</span></span>
+                                            </div>
+                                            <div class="certification-status valid">
+                                                <i class="fas fa-check-circle"></i>
+                                                <span data-es="Vigente" data-en="Valid">Vigente</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- CERTIFICACIÓN 6: SCHNEIDER ELECTRIC -->
+                            <div class="col-12 certification-item" data-category="tecnicas">
+                                <div class="certification-card">
+                                    <div class="certification-image">
+                                        <img src="/placeholder.svg?height=200&width=300&text=Schneider+Electric+Partner" alt="Schneider Electric Partner" class="img-fluid">
+                                        <div class="certification-badge tecnicas">
+                                            <span data-es="Técnica" data-en="Technical">Técnica</span>
+                                        </div>
+                                        <div class="certification-overlay">
+                                            <button class="view-btn" onclick="openCertificationModal('cert6')">
+                                                <i class="fas fa-eye"></i>
+                                                <span data-es="Ver Certificado" data-en="View Certificate">Ver Certificado</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="certification-content">
+                                        <h3>Schneider Electric</h3>
+                                        <p class="certification-subtitle" data-es="Partner Autorizado" data-en="Authorized Partner">Partner Autorizado</p>
+                                        <p data-es="Certificación como partner autorizado de Schneider Electric para la instalación, configuración y mantenimiento de equipos de automatización y control industrial." data-en="Certification as authorized partner of Schneider Electric for installation, configuration and maintenance of automation and industrial control equipment.">
+                                            Certificación como partner autorizado de Schneider Electric para la instalación, configuración y mantenimiento de equipos de automatización y control industrial.
+                                        </p>
+                                        <div class="certification-meta">
+                                            <div class="certification-details">
+                                                <span><i class="fas fa-calendar"></i> <span data-es="Vigente hasta 2025" data-en="Valid until 2025">Vigente hasta 2025</span></span>
+                                                <span><i class="fas fa-building"></i> Schneider Electric</span>
+                                                <span><i class="fas fa-cogs"></i> <span data-es="Automatización" data-en="Automation">Automatización</span></span>
+                                            </div>
+                                            <div class="certification-status valid">
+                                                <i class="fas fa-check-circle"></i>
+                                                <span data-es="Vigente" data-en="Valid">Vigente</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- CERTIFICACIÓN 7: ABB AUTHORIZED -->
+                            <div class="col-12 certification-item" data-category="tecnicas">
+                                <div class="certification-card">
+                                    <div class="certification-image">
+                                        <img src="/placeholder.svg?height=200&width=300&text=ABB+Authorized+Partner" alt="ABB Authorized Partner" class="img-fluid">
+                                        <div class="certification-badge tecnicas">
+                                            <span data-es="Técnica" data-en="Technical">Técnica</span>
+                                        </div>
+                                        <div class="certification-overlay">
+                                            <button class="view-btn" onclick="openCertificationModal('cert7')">
+                                                <i class="fas fa-eye"></i>
+                                                <span data-es="Ver Certificado" data-en="View Certificate">Ver Certificado</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="certification-content">
+                                        <h3>ABB Authorized</h3>
+                                        <p class="certification-subtitle" data-es="Partner Autorizado ABB" data-en="ABB Authorized Partner">Partner Autorizado ABB</p>
+                                        <p data-es="Certificación como partner autorizado de ABB para sistemas de media y alta tensión, variadores de frecuencia y soluciones de automatización industrial." data-en="Certification as ABB authorized partner for medium and high voltage systems, frequency drives and industrial automation solutions.">
+                                            Certificación como partner autorizado de ABB para sistemas de media y alta tensión, variadores de frecuencia y soluciones de automatización industrial.
+                                        </p>
+                                        <div class="certification-meta">
+                                            <div class="certification-details">
+                                                <span><i class="fas fa-calendar"></i> <span data-es="Vigente hasta 2025" data-en="Valid until 2025">Vigente hasta 2025</span></span>
+                                                <span><i class="fas fa-building"></i> ABB</span>
+                                                <span><i class="fas fa-bolt"></i> <span data-es="Alta Tensión" data-en="High Voltage">Alta Tensión</span></span>
+                                            </div>
+                                            <div class="certification-status valid">
+                                                <i class="fas fa-check-circle"></i>
+                                                <span data-es="Vigente" data-en="Valid">Vigente</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- CERTIFICACIÓN 8: SOLDADURA AWS -->
+                            <div class="col-12 certification-item" data-category="tecnicas">
+                                <div class="certification-card">
+                                    <div class="certification-image">
+                                        <img src="/placeholder.svg?height=200&width=300&text=AWS+Welding+Certificate" alt="AWS Welding Certificate" class="img-fluid">
+                                        <div class="certification-badge tecnicas">
+                                            <span data-es="Técnica" data-en="Technical">Técnica</span>
+                                        </div>
+                                        <div class="certification-overlay">
+                                            <button class="view-btn" onclick="openCertificationModal('cert8')">
+                                                <i class="fas fa-eye"></i>
+                                                <span data-es="Ver Certificado" data-en="View Certificate">Ver Certificado</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="certification-content">
+                                        <h3>AWS D1.1</h3>
+                                        <p class="certification-subtitle" data-es="Código de Soldadura Estructural" data-en="Structural Welding Code">Código de Soldadura Estructural</p>
+                                        <p data-es="Certificación en soldadura estructural según el código AWS D1.1 para trabajos de soldadura en estructuras metálicas y soportes de equipos eléctricos." data-en="Structural welding certification according to AWS D1.1 code for welding work on metal structures and electrical equipment supports.">
+                                            Certificación en soldadura estructural según el código AWS D1.1 para trabajos de soldadura en estructuras metálicas y soportes de equipos eléctricos.
+                                        </p>
+                                        <div class="certification-meta">
+                                            <div class="certification-details">
+                                                <span><i class="fas fa-calendar"></i> <span data-es="Vigente hasta 2025" data-en="Valid until 2025">Vigente hasta 2025</span></span>
+                                                <span><i class="fas fa-building"></i> AWS</span>
+                                                <span><i class="fas fa-fire"></i> <span data-es="Soldadura" data-en="Welding">Soldadura</span></span>
+                                            </div>
+                                            <div class="certification-status valid">
+                                                <i class="fas fa-check-circle"></i>
+                                                <span data-es="Vigente" data-en="Valid">Vigente</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+
+                    <!-- Verification Section -->
+                    <section class="verification-section">
+                        <h2 class="section-title">
+                            <i class="fas fa-shield-check"></i>
+                            <span data-es="Verificación de Certificados" data-en="Certificate Verification">Verificación de Certificados</span>
+                        </h2>
+                        <p class="verification-description" data-es="Todos nuestros certificados pueden ser verificados directamente con las entidades emisoras. Mantenemos un registro actualizado y transparente de todas nuestras acreditaciones." data-en="All our certificates can be verified directly with the issuing entities. We maintain an updated and transparent record of all our accreditations.">
+                            Todos nuestros certificados pueden ser verificados directamente con las entidades emisoras. Mantenemos un registro actualizado y transparente de todas nuestras acreditaciones.
+                        </p>
+                        <div class="verification-buttons">
+                            <a href="https://wa.me/573173945568?text=Hola,%20me%20gustaría%20verificar%20las%20certificaciones%20de%20Special%20Forces%20Electrician." target="_blank" class="verification-btn whatsapp">
+                                <i class="fab fa-whatsapp"></i>
+                                <span data-es="Verificar por WhatsApp" data-en="Verify via WhatsApp">Verificar por WhatsApp</span>
+                            </a>
+                            <a href="mailto:specialforceselectriciansas@gmail.com?subject=Verificación%20de%20Certificados" class="verification-btn email">
+                                <i class="fas fa-envelope"></i>
+                                <span data-es="Solicitar por Email" data-en="Request via Email">Solicitar por Email</span>
+                            </a>
+                        </div>
+                    </section>
+
+                    <!-- Contact Section -->
+                    <section class="contact-section">
+                        <h2 class="section-title">
+                            <i class="fas fa-handshake"></i>
+                            <span data-es="¿Necesitas Servicios Certificados?" data-en="Need Certified Services?">¿Necesitas Servicios Certificados?</span>
+                        </h2>
+                        <p class="contact-description" data-es="Nuestras certificaciones garantizan la calidad y seguridad en cada proyecto" data-en="Our certifications guarantee quality and safety in every project">
+                            Nuestras certificaciones garantizan la calidad y seguridad en cada proyecto
+                        </p>
+                        <div class="contact-buttons">
+                            <a href="https://wa.me/573173945568?text=Hola,%20me%20interesa%20obtener%20servicios%20eléctricos%20certificados." target="_blank" class="contact-btn whatsapp">
+                                <i class="fab fa-whatsapp"></i>
+                                <span data-es="Cotizar Servicios" data-en="Quote Services">Cotizar Servicios</span>
+                            </a>
+                            <a href="tel:+573173945568" class="contact-btn phone">
+                                <i class="fas fa-phone"></i>
+                                <span data-es="Llamar Ahora" data-en="Call Now">Llamar Ahora</span>
+                            </a>
+                        </div>
+                    </section>
+
+                    <!-- Social Media Section -->
+                    <footer class="social-section">
+                        <h3 data-es="Síguenos en redes sociales" data-en="Follow us on social media">Síguenos en redes sociales</h3>
+                        <div class="social-links d-flex justify-content-center flex-wrap gap-3">
+                            <a href="https://www.instagram.com/specialforceselectrician/" target="_blank" class="social-link instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://www.facebook.com/profile.php?id=100066506946924" target="_blank" class="social-link facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/company/special-forces-electrician-sas/" target="_blank" class="social-link linkedin">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://www.tiktok.com/@electricistaspecialescol" target="_blank" class="social-link tiktok">
+                                <i class="fab fa-tiktok"></i>
+                            </a>
+                        </div>
+                        <p class="contact-info text-center mt-3">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:specialforceselectriciansas@gmail.com">specialforceselectriciansas@gmail.com</a>
+                        </p>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Background Elements -->
+    <div class="bg-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <!-- Certification Modal -->
+    <div id="certificationModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle">Certificación</h2>
+                <span class="close" onclick="closeCertificationModal()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img id="modalImage" src="/placeholder.svg" alt="Certificación">
+                </div>
+                <div class="modal-info">
+                    <h3 id="modalSubtitle">Subtítulo</h3>
+                    <p id="modalDescription">Descripción de la certificación...</p>
+                    <div class="modal-details">
+                        <div class="detail-item">
+                            <strong data-es="Entidad Emisora:" data-en="Issuing Entity:">Entidad Emisora:</strong>
+                            <span id="modalIssuer">-</span>
+                        </div>
+                        <div class="detail-item">
+                            <strong data-es="Fecha de Emisión:" data-en="Issue Date:">Fecha de Emisión:</strong>
+                            <span id="modalIssueDate">-</span>
+                        </div>
+                        <div class="detail-item">
+                            <strong data-es="Fecha de Vencimiento:" data-en="Expiration Date:">Fecha de Vencimiento:</strong>
+                            <span id="modalExpiryDate">-</span>
+                        </div>
+                        <div class="detail-item">
+                            <strong data-es="Número de Certificado:" data-en="Certificate Number:">Número de Certificado:</strong>
+                            <span id="modalCertNumber">-</span>
+                        </div>
+                        <div class="detail-item">
+                            <strong data-es="Alcance:" data-en="Scope:">Alcance:</strong>
+                            <span id="modalScope">-</span>
+                        </div>
+                        <div class="detail-item">
+                            <strong data-es="Estado:" data-en="Status:">Estado:</strong>
+                            <span id="modalStatus" class="status-badge">-</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="modal-btn verify-btn" onclick="verifyCertification()">
+                    <i class="fas fa-shield-check"></i>
+                    <span data-es="Verificar Certificado" data-en="Verify Certificate">Verificar Certificado</span>
+                </button>
+                <button class="modal-btn contact-btn" onclick="contactCertification()">
+                    <i class="fab fa-whatsapp"></i>
+                    <span data-es="Consultar Servicios" data-en="Inquire Services">Consultar Servicios</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="script/Certificaciones.js"></script>
+</body>
+</html>
